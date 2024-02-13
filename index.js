@@ -4,4 +4,6 @@ app.get('/hello', (req, res) => {
     res.send(`Hello`);
 });
 
-module.exports = app
+app.listen(process.env.PORT, () => {
+    console.log("Server is running")
+})
